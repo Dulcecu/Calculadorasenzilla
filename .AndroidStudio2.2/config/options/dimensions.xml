@@ -1,0 +1,19 @@
+<application>
+  <component name="DimensionService">
+    <location key="WELCOME_SCREEN.0.0.1366.768" x="683" y="230" />
+    <location key="com.intellij.ide.util.TipDialog.0.0.1366.768" x="390" y="175" />
+    <location key="AndroidThemeDialog.0.0.1366.768" x="263" y="62" />
+    <location key="#Intentions.0.0.1366.768" x="275" y="16" />
+    <location key="AndroidCreateResourceDirectoryDialog.0.0.1366.768" x="263" y="112" />
+    <location key="AndroidCreateXmlResourceDialog.0.0.1366.768" x="541" y="150" />
+    <location key="deploy.picker.dialog.0.0.1366.768" x="363" y="112" />
+    <size key="GridCell.Tab.0.left.0.0.1366.768" width="1322" height="142" />
+    <size key="GridCell.Tab.0.center.0.0.1366.768" width="1322" height="142" />
+    <size key="GridCell.Tab.0.right.0.0.1366.768" width="1322" height="142" />
+    <size key="GridCell.Tab.0.bottom.0.0.1366.768" width="1322" height="142" />
+    <size key="GridCell.Tab.1.left.0.0.1366.768" width="1322" height="142" />
+    <size key="GridCell.Tab.1.center.0.0.1366.768" width="1322" height="142" />
+    <size key="GridCell.Tab.1.right.0.0.1366.768" width="1322" height="142" />
+    <size key="GridCell.Tab.1.bottom.0.0.1366.768" width="1322" height="142" />
+  </component>
+</application>
