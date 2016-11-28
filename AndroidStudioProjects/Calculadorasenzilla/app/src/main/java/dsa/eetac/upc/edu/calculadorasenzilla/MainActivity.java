@@ -17,8 +17,43 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+    }
+    String tag="Events";
 
-
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+    }
+    @Override
+    public void onStart() {
+        super.onStart();
+        Log.d(tag,"event onStart()");
+    }
+    @Override
+    public void onResume() {
+        super.onResume();
+        Log.d(tag,"event onResume()");
+    }
+    @Override
+    public void onPause() {
+        super.onPause();
+        Log.d(tag,"event onPause()");
+    }
+    @Override
+    public void onRestart() {
+        super.onRestart();
+        Log.d(tag,"event onRestart()");
+    }
+    @Override
+    public void onStop() {
+        super.onStop();
+        Log.d(tag,"event onStop()");
+    }
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        Log.d(tag,"event onDestroy()");
     }
 //Metodo cuando se hace click en el boton "Resultat"
     public void onClick1 (View v){
