@@ -6,14 +6,23 @@
     <location key="#Intentions.0.0.1366.768" x="275" y="16" />
     <location key="AndroidCreateResourceDirectoryDialog.0.0.1366.768" x="263" y="112" />
     <location key="AndroidCreateXmlResourceDialog.0.0.1366.768" x="541" y="150" />
-    <location key="deploy.picker.dialog.0.0.1366.768" x="363" y="112" />
-    <size key="GridCell.Tab.0.left.0.0.1366.768" width="1322" height="142" />
-    <size key="GridCell.Tab.0.center.0.0.1366.768" width="1322" height="142" />
-    <size key="GridCell.Tab.0.right.0.0.1366.768" width="1322" height="142" />
-    <size key="GridCell.Tab.0.bottom.0.0.1366.768" width="1322" height="142" />
-    <size key="GridCell.Tab.1.left.0.0.1366.768" width="1322" height="142" />
-    <size key="GridCell.Tab.1.center.0.0.1366.768" width="1322" height="142" />
-    <size key="GridCell.Tab.1.right.0.0.1366.768" width="1322" height="142" />
-    <size key="GridCell.Tab.1.bottom.0.0.1366.768" width="1322" height="142" />
+    <location key="deploy.picker.dialog.0.0.1366.768" x="398" y="85" />
+    <location key="ProcessPopupWindow.0.0.1366.768" x="944" y="228" />
+    <location key="CommitChangelistDialog2.0.0.1366.768" x="342" y="62" />
+    <location key="Vcs.Push.Dialog.0.0.1366.768" x="388" y="71" />
+    <location key="#com.intellij.ide.util.MemberChooser.0.0.1366.768" x="488" y="65" />
+    <location key="AndroidCreateResourceFileDialog.0.0.1366.768" x="263" y="112" />
+    <location key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog.0.0.1366.768" x="413" y="112" />
+    <size key="GridCell.Tab.0.left.0.0.1366.768" width="1322" height="169" />
+    <size key="GridCell.Tab.0.center.0.0.1366.768" width="1322" height="169" />
+    <size key="GridCell.Tab.0.right.0.0.1366.768" width="1322" height="169" />
+    <size key="GridCell.Tab.0.bottom.0.0.1366.768" width="1322" height="169" />
+    <size key="GridCell.Tab.1.left.0.0.1366.768" width="1322" height="210" />
+    <size key="GridCell.Tab.1.center.0.0.1366.768" width="1322" height="210" />
+    <size key="GridCell.Tab.1.right.0.0.1366.768" width="1322" height="210" />
+    <size key="GridCell.Tab.1.bottom.0.0.1366.768" width="1322" height="210" />
+    <size key="ProcessPopupWindow.0.0.1366.768" width="201" height="113" />
+    <size key="lint.notification.0.0.1366.768" width="600" height="482" />
+    <size key="deploy.picker.dialog.0.0.1366.768" width="640" height="508" />
   </component>
 </application>

@@ -2,19 +2,36 @@
   <component name="RecentProjectsManager">
     <option name="recentPaths">
       <list>
+        <option value="C:\Users\Turpitude\AndroidStudioProjects\Calculadorasenzilla" />
         <option value="C:\Users\Turpitude\AndroidStudioProjects\Initial" />
       </list>
     </option>
-    <option name="lastPath" value="C:\Users\Turpitude\AndroidStudioProjects\Initial" />
+    <option name="openPaths">
+      <list>
+        <option value="C:\Users\Turpitude\AndroidStudioProjects\Calculadorasenzilla" />
+      </list>
+    </option>
+    <option name="lastPath" value="C:\Users\Turpitude\AndroidStudioProjects\Calculadorasenzilla" />
     <option name="additionalInfo">
       <map>
+        <entry key="C:\Users\Turpitude\AndroidStudioProjects\Calculadorasenzilla">
+          <value>
+            <RecentProjectMetaInfo>
+              <option name="build" value="AI-145.3360264" />
+              <option name="productionCode" value="AI" />
+              <option name="binFolder" value="C:\Program Files\Android\Android Studio\bin" />
+              <option name="projectOpenTimestamp" value="1480328402163" />
+              <option name="buildTimestamp" value="1476741600000" />
+            </RecentProjectMetaInfo>
+          </value>
+        </entry>
         <entry key="C:\Users\Turpitude\AndroidStudioProjects\Initial">
           <value>
             <RecentProjectMetaInfo>
               <option name="build" value="AI-145.3360264" />
               <option name="productionCode" value="AI" />
               <option name="binFolder" value="C:\Program Files\Android\Android Studio\bin" />
-              <option name="projectOpenTimestamp" value="1479125295006" />
+              <option name="projectOpenTimestamp" value="1479997633003" />
               <option name="buildTimestamp" value="1476741600000" />
             </RecentProjectMetaInfo>
           </value>
