@@ -30,7 +30,7 @@
         android:orientation="vertical"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:checkedButton="@+id/rdbOne"
+        android:checkedButton="@+id/rdbOne1"
         android:layout_column="0"
         android:layout_span="3"
         android:layout_marginTop="77dp"
@@ -38,22 +38,22 @@
         android:layout_below="@+id/textView"
         android:layout_toEndOf="@+id/tableRow">
         <RadioButton
-            android:id="@+id/rdbOne"
+            android:id="@+id/rdbOne1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="+"/>
         <RadioButton
-            android:id="@+id/rdbTwo"
+            android:id="@+id/rdbTwo2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="-"/>
         <RadioButton
-            android:id="@+id/rdbThree"
+            android:id="@+id/rdbThree3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="*"/>
         <RadioButton
-            android:id="@+id/rdbFour"
+            android:id="@+id/rdbFour4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="/"/>
@@ -110,5 +110,16 @@
         android:layout_alignBottom="@+id/rdgGrupo"
         android:layout_centerHorizontal="true" />
 
+    <Button
+        android:text="Historial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClick3"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/button2"
+        android:layout_marginBottom="13dp"
+        android:id="@+id/button" />
+
 
 </RelativeLayout>
+
