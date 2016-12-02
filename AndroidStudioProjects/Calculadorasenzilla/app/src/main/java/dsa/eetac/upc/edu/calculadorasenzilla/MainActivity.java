@@ -1,7 +1,10 @@
 package dsa.eetac.upc.edu.calculadorasenzilla;
 
+import android.app.Activity;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.RadioButton;
@@ -9,16 +12,80 @@ import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
+
 public class MainActivity extends AppCompatActivity {
 
 
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-    }
+   StringBuilder historia= new StringBuilder();
     String tag="Events";
+    private String getOperation(int value1, int value2, String operation, String result){
+        StringBuilder sb= new StringBuilder();
+        sb.append(value1);
+        sb.append(operation);
+        sb.append(value2);
+        sb.append("=");
+        sb.append(result);
+        sb.append(",");
+        return  sb.toString();
+    }
+    protected void onActivityResult(int requestCode,int resultCode,Intent data){
+        super.onActivityResult(requestCode,resultCode,data);
+        EditText editText1= (EditText) findViewById(R.id.editText1);
+        EditText editText2= (EditText) findViewById(R.id.editText2);
+        RadioGroup radioGroup= (RadioGroup)findViewById(R.id.rdgGrupo);
+        TextView textBox= (TextView)findViewById(R.id.textView5);
+        //Si el codigo se compara y el resutlado es OK
+        if((requestCode==100)&&(resultCode== Activity.RESULT_OK)){
+            //Coge los extras
+
+
+            String[] fresult=null;
+            Bundle resultsAct=data.getExtras();
+            //De los extras coge el string identificado por "valor12"
+            String[] stresult1= resultsAct.getString("selected").split("=");
+            if(stresult1[0].contains("+")){
+                fresult= stresult1[0].split("\\+");
+                radioGroup.check(R.id.rdbOne1);
+
+            }
+            if(stresult1[0].contains("-")){
+                fresult= stresult1[0].split("-");
+                radioGroup.check(R.id.rdbTwo2);
+
+            }
+            if(stresult1[0].contains("*")){
+                fresult= stresult1[0].split("\\*");
+                radioGroup.check(R.id.rdbThree3);
+
+            }
+            if(stresult1[0].contains("/")){
+                fresult= stresult1[0].split("/");
+                radioGroup.check(R.id.rdbFour4);
+
+            }
+            editText1.setText(fresult[0].substring(4));
+            editText2.setText(fresult[1]);
+            textBox.setText("0");
+
+        }
+        else if(resultCode== 1337){
+            this.historia.delete(0,historia.length());
+        }
+
+    }
+    public void onClick3 (View v) {
+
+//Operamos los valores en funcion del boton
+        // Intent pasa de una vista a otra-----------------vista( hace falta cambiar el manifest)
+        Intent intent = new Intent(getApplicationContext(), Historial.class);
+        //Añade informacion extra el intent para pasarlo a la otra vista
+        intent.putExtra("Op", historia.toString());
+        //Inicia la activity esperando un resultado( nueva vista), codigo de actuacion(100)
+        startActivityForResult(intent,100);
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -67,6 +134,7 @@ public class MainActivity extends AppCompatActivity {
         StringBuilder sb = new StringBuilder();
         int value1=0;
         int value2=0;
+        Boolean correct=true;
         //Obtenemos id del boton seleccionado
         int radioButton = radioGroup.getCheckedRadioButtonId();
 
@@ -93,7 +161,7 @@ public class MainActivity extends AppCompatActivity {
                 {
                     //Comprovamos division entera o decimal
                     if(value1%value2!=0) {
-                        sb.append("0");
+                        correct=false;
                         Toast.makeText(getApplicationContext(), "Solo puedes hacer divisiones enteras",
                                 Toast.LENGTH_LONG).show();
                     }
@@ -103,18 +171,21 @@ public class MainActivity extends AppCompatActivity {
                     }
                 }
             }
-            textBox.setText(sb.toString());
+            if(correct) {
+                textBox.setText(sb.toString());
+                historia.append(getOperation(value1,value2,operation.toString(),sb.toString()));
+
+            }
+            else{textBox.setText("INPUT ERROR");}
         }
         catch (Exception e)
         {
             //Si no tienen valores excepcion
             Toast.makeText(getApplicationContext(), "No puedes dejar uno de los dos valores en blanco",
                     Toast.LENGTH_LONG).show();
+            textBox.setText("INPUT ERROR");
 
         }
-        //Operamos los valores en funcion del boton
-
-
     }
 
     public void onClick2(View v){
