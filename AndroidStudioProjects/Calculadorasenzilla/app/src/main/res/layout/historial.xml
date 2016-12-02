@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ListView
+        android:id="@+id/List"
+        android:layout_width="wrap_content"
+        android:layout_height="253dp"
+        android:layout_marginTop="14dp">
+
+    </ListView>
+
+    <EditText
+
+        android:background="@color/colorPrimary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/editText3"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="35dp"
+        android:layout_below="@+id/List"
+        android:layout_alignParentStart="true"
+        android:hint="Escollir càlcul (nºfila)" />
+
+    <Button
+        android:text="Retorna"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClick1"
+        android:id="@+id/button3"
+        android:layout_alignBaseline="@+id/editText3"
+        android:layout_alignBottom="@+id/editText3"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:text="Esborrar historial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button4"
+        android:onClick="onClick2"
+        android:layout_below="@+id/button3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="45dp" />
+</RelativeLayout>
